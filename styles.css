@@ -86,7 +86,7 @@ h1 {
 }
 
 /* Tombol Hapus */
-.delete-button {
+.card .card-body .delete-button {
   background-color: #dc3545;
   color: white;
   border: none;
@@ -97,7 +97,7 @@ h1 {
   font-size: 1rem;
 }
 
-.delete-button:hover {
+.card .card-body .delete-button:hover {
   background-color: #c82333;
 }
 
