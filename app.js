@@ -6,7 +6,6 @@ async function fetchProducts() {
     const response = await fetch(API_URL);
     const products = await response.json();
     const container = document.getElementById('product-container');
-    container.innerHTML = '';
 
     products.forEach(product => {
       const card = document.createElement('div');
@@ -17,8 +16,7 @@ async function fetchProducts() {
         <div class="card-body">
           <h2 class="card-title">${product.name}</h2>
           <p class="card-price">Rp ${parseFloat(product.price).toLocaleString('id-ID')}</p>
-          <!-- Tombol hapus -->
-          <button class="delete-button" onclick="deleteProduct('${product.id}')">Hapus</button>
+          <button class="delete-button" onclick="deleteProduct(${product.id})">Hapus</button>
         </div>
       `;
 
