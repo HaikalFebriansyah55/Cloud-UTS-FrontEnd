@@ -1,4 +1,4 @@
-const API_URL = 'http://13.239.26.89/api/products'; // Ganti dengan IP EC2 backend kamu
+const API_URL = 'http://13.239.26.89:3000/api/products'; // Ganti dengan IP EC2 backend kamu
 
 async function fetchProducts() {
   try {
