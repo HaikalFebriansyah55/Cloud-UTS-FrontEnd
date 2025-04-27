@@ -1,4 +1,4 @@
-const API_URL = 'http://13.239.26.89:3000/api/products'; // Ganti dengan IP backend kamu
+const API_URL = 'http://10.0.2.153:3000/api/products'; // Ganti dengan IP backend kamu
 
 // Fungsi untuk fetch dan tampilkan produk (buat index.html)
 async function fetchProducts() {
