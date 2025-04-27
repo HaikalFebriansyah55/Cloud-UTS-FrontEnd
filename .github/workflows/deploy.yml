@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to ECS
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@54.253.189.2 << 'EOF'
+          ssh -o StrictHostKeyChecking=no ubuntu@13.236.193.132 << 'EOF'
             cd /var/www/html/Cloud-UTS-FrontEnd
             sudo git pull origin main
             # Restart Nginx or any other service if needed
